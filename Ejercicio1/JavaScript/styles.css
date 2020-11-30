@@ -1,0 +1,65 @@
+#Title {
+  font-size: 3em;
+  background-color: white;
+  color: #1b0163;
+  text-align: center;
+  font-weight: bold;
+  border-radius:20px;
+  margin: 50px auto 30px auto;
+  width: 650px;
+}
+.pascal{
+  margin: auto;
+  background-color:yellow;
+}
+.explain {
+  border-color: white;
+  border-style: solid;
+  border-radius: 20px;
+  text-align: center;
+  width: 550px;
+  font-size: 25px;
+  margin: auto;
+  padding: 10px;
+}
+.row{
+  display: inline-block;
+  margin: 10px 0;
+}
+input{
+  position: relative;
+  width: 70px;
+  margin:0 20px;
+  background-color: white;
+  color: black; 
+  height: 25px;
+}
+#inputs{
+  width: 400px;
+  margin:0 42%;
+  font-size: 25px;
+}
+button {
+  border-radius: 10px;
+  border-color: white;
+  background-color: #1b0163;
+  color: white;
+  font-size: 25px;
+  margin: 20px 46% auto;
+  padding: 10px;
+  width: 150px;
+}
+button:hover {
+  color: #1b0163;
+  background-color: white;
+}
+body {
+  background-color: #1b0163;
+  color: white;
+  font-family: "Times New Roman", Times, serif;;
+}
+
+h1 {
+  text-align: center;
+}
+

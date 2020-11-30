@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div id="pascal"></div>
+    <meta charset="utf-8">
+    <title>El Triangulo De Pascal</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <script src="main.js"></script> 
+    <div id="Title">TRIANGULO DE PASCAL</div>
+    <div id="bod">
+      <h1>¿Qué es?</h1>
+      <div class="explain">Un triángulo de Pascal es una matriz de números matemáticos que se utiliza para encontrar varios otros conjuntos de números, como secuencias de Fibonacci, números de tetaedro y potencias de dos.</div>
+      <h1>¿Cómo funciona?</h1>
+      <div class="explain">Se parte de un triángulo de tres números iguales, para genenar el siguiente nivel se pone el mismo numero a los costados y para generar los del medio simplemente va sumando por pares los numeros del nivel anterior, y así sucesivamente.</div>
+      <h1>Generar uno:</h1>
+      <div id="inputs">
+        <div class="row">Valor Inicial<input id="start" type="number" maxlength="2"> </input></div>  
+	<div class="row">Número de Niveles<input id= "rows" type= "number" maxlength="2"> </input></div>
+      </div>
+      <button id="create" onclick="generate()">CREAR</button>
+    </div>
+  </body>
+</html>
