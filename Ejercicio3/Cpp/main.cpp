@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+using namespace std::chrono;
 
 #define ll long long
 
@@ -19,5 +20,9 @@ int main() {
   cin >> m;
   cout << "Ingrese el valor para n:" << endl;
   cin >> n;
+  auto start = high_resolution_clock::now();
   cout << "A(" << m << ", " << n << ") = " << ackermann(m, n) << endl;
+  auto end = high_resolution_clock::now();
+  auto duration = duration_cast<microseconds>(end - start);
+  cout << "Tiempo de ejecucion: " << duration.count() << endl; 
 }

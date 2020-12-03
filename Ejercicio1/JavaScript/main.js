@@ -38,6 +38,10 @@ function CreateRows() {
 function generate() {
   start = parseInt(document.getElementById("start").value);
   rows = parseInt(document.getElementById("rows").value);
+  var d = new Date();
+  var a = +new Date();
   Pascal();
+  var b = +new Date();
+  ans += "<br><h1> El tiempo de ejecucion fue: " + (b - a) + " ms";
   document.getElementById("bod").innerHTML = ans;
 }
