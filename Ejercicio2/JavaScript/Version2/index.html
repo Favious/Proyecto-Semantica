@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body bgcolor="#FFF8E1">
+  <meta http-equiv="Content-Language" content="es">
+  <style type="text/css">
+    <!-- .titulo {
+      font-family: Verdana, Geneva, sans-serif;
+    }
+    
+    .titulo strong {
+      color: #FFF;
+    }
+    
+    .subtitulo {
+      font-family: Verdana, Geneva, sans-serif;
+    }
+    
+    .subtitulo {
+      font-family: Verdana, Geneva, sans-serif;
+    }
+    
+    .subtitulo {
+      color: #069;
+    }
+    
+    -->
+  </style>
+  <title>Multiplicacion rusa</title>
+  <script type="text/javascript" src="lib/shortcut.js"></script>
+  <script type="text/javascript">
+    if (top.location != self.location) top.location = self.location;
+  </script>
+  <script type="text/javascript">
+    shortcut.add("tab", function() {});
+  </script>
+  <table width="100%" border="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td height="41" align="center" bgcolor="#006699" class="titulo"><strong>LA MULTIPLICACIÓN RUSA</strong></td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#eaf4ff" class="subtitulo"><strong>Números</strong></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#FEE6B8">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p align="center">
+  </p>
+
+  <p align="center">
+  </p>
+  <br>
+
+
+
+
+<div align="center">
+    <ajs name="Descartes" code="Descartes" width="650" height="710">
+      <param name="tamaño" value="650x710">
+      <param name="decimal_symbol" value=".">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='enunciado' x='0' y='0' ancho='100%' alto='20%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='d3d1ff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_03" value="tipo='R2' id='resultado' x='385' y='200' ancho='40%' alto='20%' dibujar-si='paso=5' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='f0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='n1' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='enunciado' expresión='(205,70,90,35)' valor='&squot;&squot;' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='(n1=&squot;&squot;)|(n2=&squot;&squot;)|(error1=1)|(error2=1)' evaluar='no' respuesta='krypto_r' ">
+      <param name="C_02" value="id='n2' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='enunciado' expresión='(330,70,90,35)' valor='&squot;&squot;' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='(n1=&squot;&squot;)|(n2=&squot;&squot;)|(error1=1)|(error2=1)' evaluar='no' respuesta='krypto_9' ">
+      <param name="C_03" value="id='paso1' interfaz='botón' tipo='numérico' región='interior' espacio='enunciado' expresión='(500,90,30,30)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/siguiente.png' acción='calcular' parámetro='paso=1;' dibujar-si='(vuelta=0)&(error1=0)&(error2=0)&(n1#&squot;&squot;)&(n2#&squot;&squot;)' ">
+      <param name="C_04" value="id='animar' interfaz='botón' tipo='numérico' región='interior' espacio='enunciado' expresión='(500,90,30,30)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/siguiente.png' acción='animar' dibujar-si='(n1*n2#0)&(fin1=0)&(paso=1)' ">
+      <param name="C_05" value="id='paso2' interfaz='botón' tipo='numérico' región='interior' espacio='enunciado' expresión='(500,90,30,30)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/siguiente.png' acción='calcular' parámetro='paso=2;' dibujar-si='(fin1=1)&(vuelta=1)' ">
+      <param name="C_06" value="id='animar' interfaz='botón' tipo='numérico' región='interior' espacio='enunciado' expresión='(500,90,30,30)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/siguiente.png' acción='animar' dibujar-si='(fin1=0)&(paso=2)' ">
+      <param name="C_07" value="id='paso3' interfaz='botón' tipo='numérico' región='interior' espacio='enunciado' expresión='(500,90,30,30)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/siguiente.png' acción='calcular' parámetro='paso=3;' dibujar-si='(fin1=1)&(vuelta=2)' ">
+      <param name="C_08" value="id='animar' interfaz='botón' tipo='numérico' región='interior' espacio='enunciado' expresión='(500,90,30,30)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/siguiente.png' acción='animar' dibujar-si='(fin1=0)&(paso=3)' ">
+      <param name="C_09" value="id='paso4' interfaz='botón' tipo='numérico' región='interior' espacio='enunciado' expresión='(500,90,30,30)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/siguiente.png' acción='calcular' parámetro='paso=4;' dibujar-si='(fin1=1)&(vuelta=3)' ">
+      <param name="C_10" value="id='animar' interfaz='botón' tipo='numérico' región='interior' espacio='enunciado' expresión='(500,90,30,30)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/siguiente.png' acción='animar' dibujar-si='(fin1=0)&(paso=4)' ">
+      <param name="C_11" value="id='paso5' interfaz='botón' tipo='numérico' región='interior' espacio='enunciado' expresión='(500,90,30,30)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/siguiente.png' acción='calcular' parámetro='paso=5;' dibujar-si='(fin1=1)&(vuelta=4)&(paso#5)' ">
+      <param name="C_12" value="id='inicio' interfaz='botón' tipo='numérico' región='interior' espacio='enunciado' nombre='inicio' expresión='(500,90,80,30)' valor='0' color='ffffff' borderColor='no' color-int='3a36e8' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='16' acción='inicio' dibujar-si='paso=5' ">
+      <param name="A_01" value="id='imp' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='imp[0]=0;imp[1]=0;imp[2]=0;imp[3]=0;imp[4]=0;imp[5]=0;imp[6]=0;imp[7]=0;imp[8]=0;imp[9]=0;imp[10]=0;imp[11]=0;imp[12]=0;imp[13]=0;imp[14]=0;imp[15]=0;imp[16]=0;imp[17]=0;imp[18]=0;imp[19]=0;imp[20]=0;' tipo='vector' ">
+      <param name="A_02" value="id='v1' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='v1[0]=0;v1[1]=0;v1[2]=0;v1[3]=0;v1[4]=0;v1[5]=0;v1[6]=0;v1[7]=0;v1[8]=0;v1[9]=0;v1[10]=0;v1[11]=0' tipo='vector' ">
+      <param name="A_03" value="id='v2' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='v2[0]=0;v2[1]=0;v2[2]=0;v2[3]=0;v2[4]=0;v2[5]=0;v2[6]=0;v2[7]=0;v2[8]=0;v2[9]=0;v2[10]=0;v2[11]=0' tipo='vector' ">
+      <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='k=-1;suma=0;vuelta=0;n1=-2;n2=-2;;' ">
+      <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='error1=((n1<0)|(n2<0)|(n1>9999)|(n2>9999))?1:0;error2=((n1=0)|(n2=0))?1:0;;;coc0=ent(n1/2);rest0=n1-2*coc0;imp[0]=rest0=1?1:0;;coc=ent(n11/2);rest=n11-2*coc;;;imp[k]=rest=1?1:0;;v2[k]=k=0?n2:n12;;suma=suma+v2[k]*imp[k];;;fin1=n11=1?1:fin1;;' ">
+      <param name="A_06" value="id='e1' evento='sí' condición='paso=1' acción='animar' ejecución='una-sola-vez' ">
+      <param name="A_07" value="id='e2' evento='sí' condición='paso=2' acción='Reiniciar Animación' ejecución='una-sola-vez' ">
+      <param name="A_08" value="id='e3' evento='sí' condición='paso=3' acción='Reiniciar Animación' ejecución='una-sola-vez' ">
+      <param name="A_09" value="id='e4' evento='sí' condición='paso=4' acción='Reiniciar Animación' ejecución='una-sola-vez' ">
+      <param name="G_01" value="espacio='enunciado' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(85,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue143;}\cf0\f0\fs48\b EL MÉTODO DE MULTIPLICACIÓN RUSA\b0\par\cf0\f0\fs48\b                                                 \b0 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_left' info='enunciado1' ">
+      <param name="G_02" value="espacio='enunciado' tipo='texto' fondo='no' color='20303a' dibujar-si='(n1=&squot;&squot;)|(n2=&squot;&squot;)|(error1=1)|(error2=1)' coord_abs='sí' expresión='(20,70)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue140;}\cf0\f0\fs24\b Introduce  dos números \b0\par\cf0\f0\fs24\b (de hasta 4 cifras)      \b0\par\cf0\f0\fs24 \par\cf0\f0\fs24 \par\cf0\f0\fs24 \par\cf0\f0\fs24 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_left' info='enunciado2' ">
+      <param name="G_03" value="espacio='enunciado' tipo='texto' fondo='no' color='20303a' dibujar-si='(n1=&squot;&squot;)|(n2=&squot;&squot;)|(error1=1)|(error2=1)' coord_abs='sí' expresión='(305,80)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue140;}\cf0\f0\fs36\b X\b0\par\cf0\f0\fs36 \par\cf0\f0\fs36 \par\cf0\f0\fs36 \par\cf0\f0\fs36 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' info='enunciado3' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(error1=1)' coord_abs='sí' expresión='(140,180)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red197\green0\blue0;}\cf0\f0\fs36\b Los números deben ser positivos\b0\par\cf0\f0\fs36\b y de hasta 4 cifras. \b0\par\cf0\f0\fs36\b Vuelve a introducir el dato.\b0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_left' info='mensaje de error1' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(error2=1)' coord_abs='sí' expresión='(140,180)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red197\green0\blue0;}\cf0\f0\fs36\b Los números deben ser positivos\b0\par\cf0\f0\fs36\b y de hasta 4 cifras. \b0\par\cf0\f0\fs36\b Vuelve a introducir el dato.\b0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_left' info='mensaje de error2' ">
+      <param name="G_06" value="espacio='enunciado' tipo='texto' fondo='no' color='20303a' dibujar-si='(k>=0)&(n1#&squot;&squot;)&(n2#&squot;&squot;)&(error1=0)&(error2=0)' coord_abs='sí' expresión='(20,70)' rastro='000000' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue160;\red0\green0\blue255;\red0\green0\blue0;\red255\green0\blue0;\red0\green0\blue148;}\cf0\f0\fs44\b Vamos a multiplicar\b0\fs56\b  \b0\cf1{\*\mjaformula\b{\expr n1\decimals 2\fixed0}\b0}\cf2\b x\b0\cf1\b  \b0\cf3{\*\mjaformula\b{\expr n2\decimals 2\fixed0}\b0}\b  \b0\par\cf4\f0\fs24\b (usando la multiplicación rusa)\b0\par\cf4\f0\fs24 \par\cf4\f0\fs24 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' info='enunciado 4 tras la entrada de datos' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='0000ff' dibujar-si='(paso=1)' coord_abs='sí' expresión='(85,195)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue255;}\cf0\f0\fs24\b Dividimos sucesivamente \b0\par\cf0\f0\fs24\b el nº \b0{\*\mjaformula\i\b{\expr n1\decimals 2\fixed0}\b0\i0}\b  entre 2\b0\par\cf0\f0\fs24\b ( sin tener en cuenta el resto)\b0\par\cf0\f0\fs24 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='primer paso' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='0000ff' dibujar-si='(k>=0)&(n11#0)' coord_abs='sí' expresión='(85,210+k*30)' rastro='0000ff' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue255;}\cf0\f0\fs36 {\*\mjaformula\b{\expr n11\decimals 2\fixed0}\b0}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_right' anchor='a_top_right' info='sucesion del primer paso' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' dibujar-si='(paso=2)' coord_abs='sí' expresión='(125,165)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red255\green0\blue0;}\cf0\f0\fs24\b Multiplicamos sucesivamente \b0\par\cf0\f0\fs24\b por 2 el nº  \b0{\*\mjaformula\b{\expr n2\decimals 2\fixed0}\b0}\par\cf0\f0\fs24 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_left' info='segundo paso' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' dibujar-si='(k>=0)&(n12#0)&(paso=2)' coord_abs='sí' expresión='(220,210+k*30)' rastro='ff0000' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red255\green0\blue0;}\cf0\f0\fs36 {\*\mjaformula\b{\expr n12\decimals 2\fixed0}\b0}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_right' anchor='a_top_right' info='sucesion segundo paso' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='0000ff' dibujar-si='(paso=3)' coord_abs='sí' expresión='(115,195)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\cf0\f0\fs24\b Marcamos los \b0\par\cf0\f0\fs24\b nº  impares \b0\par\cf0\f0\fs24\b de la 1ª columna \b0\par\cf0\f0\fs24 \par\cf0\f0\fs24 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='tercer paso' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(k>=0)&(n11#0)&(imp[k]=1)&(paso=3)' coord_abs='sí' expresión='(120,210+k*30)' rastro='000000' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\cf0\f0\fs36\b X\b0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_right' anchor='a_top_right' info='sucesión paso 3' ">
+      <param name="G_13" value="espacio='E1' tipo='texto' fondo='no' color='0000ff' dibujar-si='(paso=4)' coord_abs='sí' expresión='(290,215)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\cf0\f0\fs24\b Tomamos los nº\b0\par\cf0\f0\fs24\b de la  columna 2\b0\par\cf0\f0\fs24\b con un impar\b0\par\cf0\f0\fs24\b en la 1ª columna.\b0\par\cf0\f0\fs24\b \b0\par\cf0\f0\fs24 \par\cf0\f0\fs24 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='cuarto paso' ">
+      <param name="G_14" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(k>=0)&(n12#0)&(imp[k]=1)&(paso=4)' coord_abs='sí' expresión='(320,210+k*30)' rastro='000000' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\cf0\f0\fs36 {\*\mjaformula\b{\expr v2[k]\decimals 2\fixed0}\b0}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_right' anchor='a_top_right' info='sucesion paso 4' ">
+      <param name="G_15" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='paso=5' coord_abs='sí' expresión='(325,200+k*30)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;\red255\green0\blue0;}\cf0\f0\fs40\b               ________\b0\par\cf0\f0\fs32\b Sumamos:\b0\fs40\b  \b0{\*\mjaformula\b{\expr suma\decimals 2\fixed0}\b0}\par\cf0\f0\fs40 \par\cf0\f0\fs40 \par\cf0\f0\fs40 \par\cf0\f0\fs40 \par\cf1\f1\fs40 \par\cf1\f1\fs40 \par\cf1\f1\fs40 \par\cf1\f1\fs40 \par\cf1\f1\fs40 \par\cf1\f1\fs40 \par\cf1\f1\fs40 \par\cf1\f1\fs40 \par\cf1\f1\fs40 \par\cf1\f1\fs40 n11= {\*\mjaformula\i{\expr n11\decimals 2\fixed0}\i0}\par\cf1\f1\fs40 fin1={\*\mjaformula\i{\expr fin1\decimals 2\fixed0}\i0}\par\cf1\f1\fs40 paso1={\*\mjaformula\i{\expr paso\decimals 2\fixed0}\i0}\par\cf1\f1\fs40 paso2={\*\mjaformula\i{\expr paso\decimals 2\fixed0}\i0}\par\cf1\f1\fs40 sumandos= {\*\mjaformula\i{\expr sumandos\decimals 2\fixed0}\i0}\par\cf1\f1\fs40 \par\cf1\f1\fs40 vuelta= {\*\mjaformula\i{\expr vuelta\decimals 2\fixed0}\i0}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_right' anchor='a_top_right' info='quinto paso' ">
+      <param name="G_16" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' dibujar-si='(k>=0)&(n12#0)&(kk=1)' coord_abs='sí' expresión='(340,80+k*30)' rastro='ff0000' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue255;}\cf0\f0\fs40 {\*\mjaformula\i{\expr v2[k]\decimals 2\fixed0}\i0}·{\*\mjaformula\i{\expr k\decimals 2\fixed0}\i0}  =    {\*\mjaformula\i{\expr v2[k]\decimals 2\fixed0}\i0}·{\*\mjaformula\i{\expr imp[k]\decimals 2\fixed0}\i0}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' ">
+      <param name="G_17" value="espacio='resultado' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue160;\red0\green0\blue255;\red0\green0\blue0;\red255\green0\blue0;}\cf0\f0\fs40\b El resultado: \b0\par\cf0\f0\fs56\b  \b0\cf1{\*\mjaformula\b{\expr n1\decimals 2\fixed0}\b0}\cf2\b x\b0\cf1\b  \b0\cf3{\*\mjaformula\b{\expr n2\decimals 2\fixed0}\b0}\b  \b0\cf2\b =\b0\par\cf2\f0\fs56 {\*\mjaformula\b{\expr suma\decimals 2\fixed0}\b0}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_left' ">
+      <param name="Animación" value="pausa='40' controles='sí' auto='sí' repetir='no' inicio='k=0; suma=0; fin1=0' hacer='n11=k=0?n1:ent(n11/2);;v1[k]=k=0?n1:n11;;vuelta=n11=1?vuelta+1:vuelta;;n12=k=0?n2:((n11>=1)?n12*2:0);;k=k+1;;' mientras='n11>=1' ">
+    </ajs>
+  </div>
+
+ 
+
+  <p align="center">
+    <ajs name="Descartes" code="Descartes" width="300" height="25">
+      <param name="tamaño" value="300x25">
+      <param name="decimal_symbol" value=",">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='600' alto='25' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='Indicaciones' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Indicaciones' expresión='(0,0,300,25)' valor='0' color='003d64' borderColor='no' color-int='d8eeff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' acción='abrir Escena' parámetro='indicaciones.html' ">
+    </ajs>
+  </p>
+  <table width="100%" border="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td width="69">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr bgcolor="#fee6b8">
+        <td width="69">&nbsp;</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td width="69" align="center" valign="middle"><img src="img/logo2.gif" width="65" height="80" alt="logo"></td>
+        <td>
+          <font face="Verdana, Geneva, sans-serif" size="1"> Proyecto Descartes. Año 2019.</font>
+        </td>
+      </tr>
+      <tr bgcolor="#fee6b8">
+        <td width="69">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

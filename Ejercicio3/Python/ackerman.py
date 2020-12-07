@@ -2,6 +2,9 @@
 import atexit 
 from time import time, strftime, localtime 
 from datetime import timedelta 
+import sys
+
+sys.setrecursionlimit(10**6)
 
 def secondsToStr(elapsed=None): 
     if elapsed is None: 
