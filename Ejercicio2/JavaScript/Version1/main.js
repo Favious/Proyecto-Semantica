@@ -7,8 +7,8 @@ function russianPeasant(n, m) {
   while(m) {
     if(m % 2) 
       an = an + n;
-    n = parseInt(n * 2);
-    m = parseInt(m / 2);
+    n = n << 1;
+    m = m >> 1;
   }
   ans = "<h1>" + an + "</h1>";
 }
