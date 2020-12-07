@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplicacion Rusa</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <script src="main.js"></script> 
+    <div id="Title">MULTIPLICACION RUSA</div>
+    <div id="bod">
+      <h1>¿Qué es?</h1>
+      <div class="explain">La multiplicación rusa consiste en multiplicar sucesivamente por el
+      multiplicando y dividir por 2 el multiplicador hasta que el multiplicador tome el
+      valor 1. Luego, se suman todos los multiplicandos correspondientes a los
+      multiplicadores impares. Dicha suma es el resultado del producto de los dos
+      números.
+      </div>
+      <h1>Generar una:</h1>
+      <div id="inputs">
+        <div class="row">Numero m<input id="start" type="number" maxlength="2"> </input></div>  
+	      <div class="row">Numero n<input id= "rows" type= "number" maxlength="2"> </input></div>
+      </div>
+      <button id="create" onclick="generate()">CREAR</button>
+    </div>
+  </body>
+</html>

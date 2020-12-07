@@ -8,18 +8,17 @@ function Pascal() {
   prevArr = [start];
   curArr = [start, start];
   ans = "<h1>"
-  for (var i = 0; i <= rows; i++) {
-    if (rows > 2) {
-      prevArr = curArr;
-      curArr = new Array(i);
-      CreateRows();
+  if (rows > 2) {
+      for (var i = 0; i <= rows; i++) {
+        prevArr = curArr;
+        curArr = new Array(i);
+        CreateRows();
+      }
     } else if(rows < 2){
       ans = "<h1>¡Un triángulo necesita al menos dos niveles!</h1>";
-    }
-    else{
+    } else{
       ans = "<h1>" + prevArr + "<br>" + curArr[0] + " " + curArr[1] + "</h1>";
     }
-  }
   ans += "</h1>";
 }
 
@@ -42,6 +41,7 @@ function generate() {
   var a = +new Date();
   Pascal();
   var b = +new Date();
+  console.log(b - a);
   ans += "<br><h1> El tiempo de ejecucion fue: " + (b - a) + " ms";
   document.getElementById("bod").innerHTML = ans;
 }

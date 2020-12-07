@@ -1,7 +1,7 @@
 #Title {
   font-size: 3em;
   background-color: white;
-  color: #1b0163;
+  color: #850c1c;
   text-align: center;
   font-weight: bold;
   border-radius:20px;
@@ -38,7 +38,7 @@ input{
 button {
   border-radius: 10px;
   border-color: white;
-  background-color: #1b0163;
+  background-color: #850c1c;
   color: white;
   font-size: 25px;
   margin: 20px 46% auto;
@@ -46,11 +46,11 @@ button {
   width: 150px;
 }
 button:hover {
-  color: #1b0163;
+  color: #850c1c;
   background-color: white;
 }
 body {
-  background-color: #1b0163;
+  background-color: #850c1c;
   color: white;
   font-family: "Times New Roman", Times, serif;;
 }
